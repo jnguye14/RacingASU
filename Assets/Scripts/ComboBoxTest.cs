@@ -9,95 +9,138 @@ using System.Collections;
 
 public class ComboBoxTest : MonoBehaviour
 {
-	private string startCode = "Click Here to Type Code";
-	private int startNum = 0;
-	private string startDropText = "Drop Down Menu";
-	private bool startDropOn = false;
-	private Vector2 startScrollPosition = Vector2.zero;
+	public Rect boundingBox = new Rect(10,10,410,40);
 	public Building[] buildings;
 
+	private Building selectedBuilding;
+	private string startCode;
+	private string startDropText;
+	private bool startDropOn;
+	private bool showError;
+	private Vector2 startScrollPosition;
+	//var fileName = "/Scripts/credits.txt";
+	
 	// Use this for initialization
 	void Start ()
 	{
-		// TODO: add buildings dynamically (perhaps from text file)
-		buildings = new Building[]{
+		// TODO: add buildings dynamically (perhaps from text file?)
+		/*
+		var sr = new StreamReader(Application.dataPath + fileName); // "..UnityGameProject/Assets" + fileName
+		var fileContents = sr.ReadToEnd();
+		sr.Close();
+		creditText = fileContents;
+		//parse file contents
+		//*/
+		/*buildings = new Building[]{
 			new Building("building 1"),
 			new Building("building 2"),
 			new Building("Building 3"),
 			new Building("building 4")//,
 			//new Building("building 5"),
 			//new Building("building 6")
-		};
+		};//*/
+	}
+
+	// Constructor
+	ComboBoxTest()
+	{
+		startCode = "Click Here to Type Code";
+		startDropText = "Drop Down Menu";
+		startDropOn = false;
+		startScrollPosition = Vector2.zero;
+		showError = false;
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		// code from Unity references Input.inputString
-		// http://docs.unity3d.com/Documentation/ScriptReference/Input-inputString.html
-		// useful if this script is attached to guiText object
-		/*if(Input.GetKeyDown(KeyCode.Return) && GUI.GetNameOfFocusedControl () == "Code Input")
-		{
-			Debug.Log ("Entered Text");
-
-			foreach (char c in Input.inputString)
-			{
-				// Backspace - Remove the last character
-				if (c == '\b')
-				{
-					if(startCode.Length != 0)
-					{
-						startCode = startCode.Substring(0,startCode.Length-1);
-					}
-					//if (guiText.text.Length != 0)
-					//	guiText.text = guiText.text.Substring(0, guiText.text.Length - 1);
-				}
-				// End of entry
-				else if (c == '\n' || c == '\r')
-				{ // "\n" for Mac, "\r" for windows.
-					Debug.Log ("User entered: " + startCode/*guiText.text*//*);
-				}
-				// Normal text input - just append to the end
-				else
-				{
-					startCode += c;
-					//guiText.text += c;
-				}
-			}//*/
-		/*}//*/
-		/*
-	for (var c : char in Input.inputString)
+	void Update () { }
+	
+	int FindBuildingCode(string input)
 	{
-		// Backspace - Remove the last character
-		if (c == "\b"[0])
+		for (int i = 0; i < buildings.Length; i++)
 		{
-			if (guiText.text.Length != 0)
-				guiText.text = guiText.text.Substring(0, guiText.text.Length - 1);
+			if(buildings[i].Code == input || buildings[i].Name == input)
+			{
+				return i;
+			}
 		}
-		// End of entry
-		else if (c == "\n"[0] || c == "\r"[0])
-		{ // "\n" for Mac, "\r" for windows.
-			print ("User entered his name: " + guiText.text);
+		return -1;
+	}
+
+	void SetCurrentBuilding(Building b)
+	{
+		showError = false;
+
+		startCode = b.Code;
+		startDropText = b.Name;
+
+		selectedBuilding = b;
+		// Depends on whether this is the start combobox or the end combobox
+		//PlayerPrefs.SetFloat("SpawnX", b.SpawnLocation.x);
+		//PlayerPrefs.SetFloat("SpawnY", b.SpawnLocation.y);
+		//PlayerPrefs.SetFloat("SpawnZ", b.SpawnLocation.z);
+	}
+
+	Vector3 GetSelectedLocation()
+	{
+		if (selectedBuilding != null)
+		{
+			return selectedBuilding.SpawnLocation;
 		}
-		// Normal text input - just append to the end
 		else
 		{
-			guiText.text += c;
+			return Vector3.zero;
 		}
-	}
-	*/
 	}
 
 	void OnGUI()
 	{
-		GUI.Label(new Rect(10,10,200,20), "Enter a building code: ");
-		GUI.SetNextControlName ("Code Input");
-		startCode = GUI.TextField(new Rect (210, 10, 200, 20), startCode, 25);
+		// get bounding box dimensions used for determining area of GUI elements
+		// box separated into four quadrants
+		float x = boundingBox.x;
+		float y = boundingBox.y;
+		float w = boundingBox.width / 2;
+		float h = boundingBox.height / 2;
+		float buf = 5; // buffer between quadrants
+		GUI.depth = -1;
 
-		// TODO: figure out how controller knows user had entered a code
-		// TODO: check if code valid (i.e. corresponds w/ code for a building)
-		
-		GUI.Label(new Rect(10,40,200,20), "Else, choose from dropdown:");
-		if(GUI.Button(new Rect(210,40,200,20), startDropText))
+		// Text Field for user to type in building name or code
+		GUI.Label(new Rect(x,y,w,h), "Enter a building code: ");
+		if (GUI.GetNameOfFocusedControl() == "Code Input"
+	    		&& Event.current.type == EventType.KeyDown
+	    		&& (Event.current.keyCode == KeyCode.Return))
+		{
+			GUI.FocusControl("");
+			int index = FindBuildingCode(startCode);
+			if(index == -1)
+			{
+				showError = true;
+				startCode = "";
+			}
+			else
+			{
+				showError = false;
+				SetCurrentBuilding(buildings[index]);
+			}
+		}
+		if (GUI.GetNameOfFocusedControl () == "Code Input" && showError)
+		{
+			showError = false;
+		}
+		GUI.SetNextControlName ("Code Input");
+		startCode = GUI.TextField(new Rect (x+w+buf,y,w,h), startCode, 25);
+
+		// input error
+		if (showError)
+		{
+			Color temp = GUI.contentColor;
+			GUI.contentColor = Color.red;
+			GUI.Label(new Rect (x+w+buf+10,y,w,h), "Unable to find building");
+			GUI.contentColor = temp;
+		}
+
+		// alternatively, users can use a dropdown box to find their building
+		GUI.Label(new Rect(x,y+h+buf,w,h), "Else, choose from dropdown:");
+		if(GUI.Button(new Rect(x+w+buf,y+h+buf,w,h), startDropText))
 		{
 			if(startDropOn) startDropOn = false;
 			else startDropOn = true;
@@ -105,31 +148,27 @@ public class ComboBoxTest : MonoBehaviour
 		
 		if(startDropOn)
 		{
-			GUI.Box(new Rect(210,60,200,100), "");		
+			GUI.Box(new Rect(x+w+buf,y+2*h+buf,w,Mathf.Min(100, buildings.Length*h)), "");
 			startScrollPosition = GUI.BeginScrollView(
-				new Rect(210,60,200,100), // same as GUI.Box (i.e. viewable area on screen)
-				startScrollPosition, // zero
-				new Rect(0,0,184,buildings.Length/*.Count*/*20), // size of content area
-				false, // do not horizontal scrollbar unless necessary
-				true // always show vertical scrollbar
-				);
+					new Rect(x+w+buf,y+2*h+buf,w,Mathf.Min(100, buildings.Length*h)), // same as GUI.Box (i.e. viewable area on screen)
+					startScrollPosition, // zero
+					new Rect(0,0,w-16,buildings.Length*h), // size of content area
+					false, // do not horizontal scrollbar unless necessary
+					true // always show vertical scrollbar
+					);
 			
 			for(int i = 0; i<buildings.Length/*.Count*/; i++)
 			{
-				string temp = buildings[i].Name/*.ToString()*/;
-				if(GUI.Button(new Rect(0,i*20,184,20), temp))
+				string temp = buildings[i].Name;
+				if(GUI.Button(new Rect(0,i*h,w-16,h), temp))
 				{
-					startNum = i+1;
-					startDropText = buildings[i].Name/*.ToString()*/;
+					SetCurrentBuilding(buildings[i]);
 					startDropOn = false;
-					Debug.Log("Choose building number: " + startNum);
 				}
 			}
 			
 			GUI.EndScrollView();
 		}
-		
-		// TODO: copy & paste code to add second drop down for end point
 	}
 }
 
@@ -149,7 +188,7 @@ public class Building
 		West
 	}
 	public Direction SpawnDirection = Direction.North; // default
-	private Vector3 SpawnLocation = Vector3.zero;
+	public Vector3 SpawnLocation = Vector3.zero;
 	
 	public Building() { }
 

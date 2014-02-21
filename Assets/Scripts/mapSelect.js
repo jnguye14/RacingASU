@@ -22,6 +22,8 @@ private var buttonHeight : float;
 var startNum : int = 0;
 var endNum : int = 0;
 
+public var startLoc : GameObject;
+public var endLoc : GameObject;
 
 function Start ()
 {
@@ -40,6 +42,12 @@ function Start ()
 
 function Update ()
 {
+	if(this.active)
+	{
+    	startLoc.active = true;
+	    endLoc.active = true;
+	}
+	
 	hBuffer = Screen.width*0.05;
 	mapWidth = Screen.width*0.6;
 	dropWidth = Screen.width*0.25;
@@ -58,6 +66,8 @@ function OnGUI()
     if (GUI.Button(Rect(hBuffer,2*vBuffer+mapHeight,buttonWidth,buttonHeight), "Back"))
     {
         Debug.Log("Going Back");
+        startLoc.active = false;
+        endLoc.active = false;
 		gameObject.GetComponent(CharacterSelect).enabled = true;
 		gameObject.GetComponent(mapSelect).enabled = false;
 	}
