@@ -138,7 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   showThis: 0
   creditSpeed: 150
-  creditsTextFile: {fileID: 4900000, guid: a63a35bfa7a6f4f408fc5707388f887f, type: 3}
+  fileName: /Scripts/credits.txt
 --- !u!114 &342280964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,8 +190,6 @@ MonoBehaviour:
   fileName: /buildings.txt
   startNum: 0
   endNum: 0
-  startLoc: {fileID: 718907513}
-  endLoc: {fileID: 1257057063}
 --- !u!114 &342280967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,7 +198,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 342280960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62016c307ad1f76458ea11a5297d2200, type: 3}
+  m_Script: {fileID: 11500000, guid: c99021af7fe675949825669bf8cc209b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &718907513

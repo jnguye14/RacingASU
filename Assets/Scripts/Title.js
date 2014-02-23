@@ -12,14 +12,18 @@ var showThis : int = 0;
 var creditSpeed : int = 50;
 private var amount : double;
 private var repeatNum : int = 0;
-public var creditsTextFile : TextAsset;
+var fileName = "/Scripts/credits.txt";
 private var creditText : String = "";
 private var creditLength : int = 2000;
 
 function Start()
 {
 	// grab credit text from text file
-	creditText = creditsTextFile.text;
+	//*
+	var sr = new StreamReader(Application.dataPath + fileName); // "..UnityGameProject/Assets" + fileName
+	var fileContents = sr.ReadToEnd();
+	sr.Close();
+	creditText = fileContents;//*/
 }
 
 function Update()
