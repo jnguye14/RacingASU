@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showThis: 0
-  creditSpeed: 150
+  creditSpeed: 50
   fileName: /Scripts/credits.txt
 --- !u!114 &342280964
 MonoBehaviour:
@@ -164,17 +164,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8036c2ebcd3244da19cd5be9bea4771f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charPic1: {fileID: 2800000, guid: 2907e3027e3e55844b1cd672828397b5, type: 3}
-  charPic2: {fileID: 2800000, guid: 2907e3027e3e55844b1cd672828397b5, type: 3}
-  charPic3: {fileID: 2800000, guid: 2907e3027e3e55844b1cd672828397b5, type: 3}
-  charPic4: {fileID: 2800000, guid: 2907e3027e3e55844b1cd672828397b5, type: 3}
-  charPic5: {fileID: 2800000, guid: 2907e3027e3e55844b1cd672828397b5, type: 3}
-  charPic6: {fileID: 2800000, guid: 2907e3027e3e55844b1cd672828397b5, type: 3}
-  shoesPic: {fileID: 2800000, guid: 2907e3027e3e55844b1cd672828397b5, type: 3}
-  rollerbladePic: {fileID: 2800000, guid: 2907e3027e3e55844b1cd672828397b5, type: 3}
-  skateboardPic: {fileID: 2800000, guid: 2907e3027e3e55844b1cd672828397b5, type: 3}
-  scooterPic: {fileID: 2800000, guid: 2907e3027e3e55844b1cd672828397b5, type: 3}
-  bikePic: {fileID: 2800000, guid: 2907e3027e3e55844b1cd672828397b5, type: 3}
+  charPic1: {fileID: 0}
+  charPic2: {fileID: 0}
+  charPic3: {fileID: 0}
+  charPic4: {fileID: 0}
+  charPic5: {fileID: 0}
+  charPic6: {fileID: 0}
+  shoesPic: {fileID: 0}
+  rollerbladePic: {fileID: 0}
+  skateboardPic: {fileID: 0}
+  scooterPic: {fileID: 0}
+  bikePic: {fileID: 0}
 --- !u!114 &342280966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,10 +186,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458d601892857e04984b5f67a7360535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapTexture: {fileID: 2800000, guid: e565e8a3ff3d606499601b7fea0a16aa, type: 3}
+  mapTexture: {fileID: 0}
   fileName: /buildings.txt
   startNum: 0
   endNum: 0
+  startDropDown: {fileID: 718907513}
+  endDropDown: {fileID: 1257057063}
 --- !u!114 &342280967
 MonoBehaviour:
   m_ObjectHideFlags: 0

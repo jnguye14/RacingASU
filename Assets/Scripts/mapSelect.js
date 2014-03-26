@@ -22,6 +22,11 @@ private var buttonHeight : float;
 var startNum : int = 0;
 var endNum : int = 0;
 
+private var startSelected : boolean = false;
+private var endSelected : boolean = false;
+
+var startDropDown : GameObject;
+var endDropDown : GameObject;
 
 function Start ()
 {
@@ -40,6 +45,14 @@ function Start ()
 
 function Update ()
 {
+    if(!startDropDown.activeSelf)
+    {
+        startDropDown.SetActive(true);
+    }
+    if(!endDropDown.activeSelf)
+    {
+        endDropDown.SetActive(true);
+    }
 	hBuffer = Screen.width*0.05;
 	mapWidth = Screen.width*0.6;
 	dropWidth = Screen.width*0.25;
@@ -49,6 +62,30 @@ function Update ()
 	mapHeight = Screen.height*0.75;
 	dropHeight = (mapHeight-vBuffer)/2;
 	buttonHeight = Screen.height*0.1;
+
+    /*
+    var temp : ComboBoxTest = startDropDown.GetComponent("ComboBoxTest");
+    var spawnLoc : Vector3 = temp.GetSelectedLocation();
+    if(spawnLoc != Vector3.zero)
+    {
+        startSelected = true;
+        PlayerPrefs.SetFloat("SpawnX", spawnLoc.x);
+		PlayerPrefs.SetFloat("SpawnY", spawnLoc.y);
+		PlayerPrefs.SetFloat("SpawnZ", spawnLoc.z);
+        Debug.Log("Spawn location set to: " + spawnLoc);
+    }//*/
+    /*
+    temp = endDropDown.GetComponent("ComboBoxTest");
+    var finishLoc : Vector3 = temp.GetSelectedLocation();
+    //var finishLoc : Vector3 = (ComboBoxTest)endDropDown.GetComponent("ComboBoxTest").GetSelectedLocation();
+    if(finishLoc != Vector3.zero)
+    {
+        endSelected = true;
+        PlayerPrefs.SetFloat("endX", finishLoc.x);
+		PlayerPrefs.SetFloat("endY", finishLoc.y);
+		PlayerPrefs.SetFloat("endZ", finishLoc.z);
+        Debug.Log("Finish location set to: " + finishLoc);
+    }//*/
 }
 
 
@@ -60,6 +97,8 @@ function OnGUI()
         Debug.Log("Going Back");
 		gameObject.GetComponent(CharacterSelect).enabled = true;
 		gameObject.GetComponent(mapSelect).enabled = false;
+        startDropDown.SetActive(false);
+        endDropDown.SetActive(false);
 	}
         
     // map
@@ -71,11 +110,11 @@ function OnGUI()
     GUI.Box(Rect(2*hBuffer+mapWidth,2*vBuffer+dropHeight,dropWidth,dropHeight), "Choose an End");
 
     // text label
-    if(startNum == 0)
+    if(startNum == 0 || startSelected)
     {
         GUI.Label(Rect(Screen.width*0.3, 2*vBuffer+mapHeight, Screen.width*0.4, buttonHeight), "Please Choose a Starting Point");
     }
-    else if(endNum == 0)
+    else if(endNum == 0 || endSelected)
     {
         GUI.Label(Rect(Screen.width*0.3, 2*vBuffer+mapHeight, Screen.width*0.4, buttonHeight), "Please Choose an Ending Point");
     }
@@ -86,7 +125,7 @@ function OnGUI()
     
 
     // Start button
-    if(startNum > 0 && endNum > 0)
+    if((startNum > 0 || startSelected) && (endNum > 0 || endSelected))
     {
         if (GUI.Button(Rect(Screen.width-Screen.width*0.25,2*vBuffer+mapHeight,buttonWidth,buttonHeight), "Start"))
         {

@@ -1,31 +1,65 @@
 fileFormatVersion: 2
-guid: 59d8f8fb9669def4abe6de1da05bee5a
+guid: 7fe2c9aac97a5482aa2534c6935af0bf
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: Box001
-    100002: Sky001
-    100004: //RootNode
-    100006: SparkyBodyFixMesh(Here)
-    100008: SparkyHeadFixMesh
-    100010: Spot001
-    100012: Spot001.Target
+    100002: Cone001
+    100004: Cone002
+    100006: Cone003
+    100008: Cylinder001
+    100010: Cylinder002
+    100012: Cylinder003
+    100014: Cylinder004
+    100016: Cylinder005
+    100018: Cylinder006
+    100020: Cylinder007
+    100022: //RootNode
     400000: Box001
-    400002: Sky001
-    400004: //RootNode
-    400006: SparkyBodyFixMesh(Here)
-    400008: SparkyHeadFixMesh
-    400010: Spot001
-    400012: Spot001.Target
+    400002: Cone001
+    400004: Cone002
+    400006: Cone003
+    400008: Cylinder001
+    400010: Cylinder002
+    400012: Cylinder003
+    400014: Cylinder004
+    400016: Cylinder005
+    400018: Cylinder006
+    400020: Cylinder007
+    400022: //RootNode
     2300000: Box001
-    2300002: SparkyBodyFixMesh(Here)
-    2300004: SparkyHeadFixMesh
+    2300002: Cone001
+    2300004: Cone002
+    2300006: Cone003
+    2300008: Cylinder001
+    2300010: Cylinder002
+    2300012: Cylinder003
+    2300014: Cylinder004
+    2300016: Cylinder005
+    2300018: Cylinder006
+    2300020: Cylinder007
     3300000: Box001
-    3300002: SparkyBodyFixMesh(Here)
-    3300004: SparkyHeadFixMesh
-    4300000: SparkyBodyFixMesh(Here)
-    4300002: SparkyHeadFixMesh
-    4300004: Box001
+    3300002: Cone001
+    3300004: Cone002
+    3300006: Cone003
+    3300008: Cylinder001
+    3300010: Cylinder002
+    3300012: Cylinder003
+    3300014: Cylinder004
+    3300016: Cylinder005
+    3300018: Cylinder006
+    3300020: Cylinder007
+    4300000: Cylinder006
+    4300002: Cylinder002
+    4300004: Cylinder003
+    4300006: Cylinder004
+    4300008: Cylinder005
+    4300010: Cone003
+    4300012: Cone001
+    4300014: Cylinder007
+    4300016: Cone002
+    4300018: Cylinder001
+    4300020: Box001
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -45,7 +79,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: .00999999978
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
