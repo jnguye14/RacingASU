@@ -162,7 +162,7 @@ public class Title : MonoBehaviour
         float btnHeight = tempRect.height;
         tempRect.y += buffer + ((float)numButtons - 1.0f) * (buffer + btnHeight);
 
-        string text1 = "How to Play:\nUse WASD to move\nShift to run\n\n...\n\nHave fun! :)";
+        string text1 = "How to Play:\nUse WASD to move\nShift to run\nand P to pause\n\n...\n\nHave fun! :)";
         GUI.Box(adjRect(menuBox), text1);
         if (GUI.Button(tempRect, "Back"))
         {
