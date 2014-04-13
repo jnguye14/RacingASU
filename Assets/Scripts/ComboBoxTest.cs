@@ -10,13 +10,21 @@ public class ComboBoxTest : MonoBehaviour
     public Rect boundingBox = new Rect(10, 10, 410, 40);
     public Building[] buildings;
 
-    private Building selectedBuilding;
-    private string startCode;
-    private string startDropText;
-    private bool startDropOn;
-    private bool showError;
-    private Vector2 startScrollPosition;
+    public Building selectedBuilding;
+    private string startCode = "Click Here to Type Code";
+    private string startDropText = "Drop Down Menu";
+    private bool startDropOn = false;
+    private bool showError = false;
+    private Vector2 startScrollPosition = Vector2.zero;
     //var fileName = "/Scripts/credits.txt";
+
+    public bool hasBuilding
+    {
+        get
+        {
+            return (selectedBuilding.Name != "");//(selectedBuilding != null);
+        }
+    }
 
     // Use this for initialization
     void Start()
@@ -38,19 +46,6 @@ public class ComboBoxTest : MonoBehaviour
             //new Building("building 6")
         };//*/
     }
-
-    // Constructor
-    ComboBoxTest()
-    {
-        startCode = "Click Here to Type Code";
-        startDropText = "Drop Down Menu";
-        startDropOn = false;
-        startScrollPosition = Vector2.zero;
-        showError = false;
-    }
-
-    // Update is called once per frame
-    void Update() { }
 
     int FindBuildingCode(string input)
     {
@@ -96,9 +91,9 @@ public class ComboBoxTest : MonoBehaviour
         // box separated into four quadrants
         float x = boundingBox.x;
         float y = boundingBox.y;
-        float w = boundingBox.width / 2;
-        float h = boundingBox.height / 2;
-        float buf = 5; // buffer between quadrants
+        float w = boundingBox.width / 2.0f;
+        float h = boundingBox.height / 4.0f;//2.0f;
+        float buf = 5.0f; // buffer between quadrants
         GUI.depth = -1;
 
         // Text Field for user to type in building name or code

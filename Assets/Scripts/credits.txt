@@ -1,146 +1,55 @@
 
 
-Made by the
+Racing ASU
+
+
+A Game Made by the
 
 ASU Game Development Club
-Spring 2013
+Spring 2013-2014
 
 
 
 
 
+Director of Design
+Jesse McIntosh
 
-Jesse McIntosh - Head Designer
 
+Director of Art
+Janelle Wilke
 
-Janelle Wilke - Head Artist
 
+Director of Programming
+Jordan Nguyen
 
-Seth Carver - Head 3D Model Artist
 
+3D Building Model Artist
+Seth Carver
 
-Jordan Nguyen - Head Programmer
 
+Sparky Character Model Artist
+James Bird
 
-Hello
 
-World
+Programmers
+Adam Chmurzynski
+Seth Immel
 
-test
 
-something
+Photography
+Mark Dickinson
 
-idk
 
-blarghh
+Music
+Jesse McIntosh
 
-meow
 
-superman
+Special Thanks
+Dr. Yoshihiro Kobayashi
 
-I got nothing
 
-the end
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-jk
-
-still have4 some
-
-Star Wars text
-
- to go through
-
-
-
-my name is
-
-Asian Panda I V ! ! ! 
-
-
-
-filler Text
-
-filler Text2
-
-filler Text3
-
-filler Text4
-
-filler Text infinity + 1
-
-filler Text something rather
-
-you get the idea
-
-
-
- is this long
-
-enough yet?
-
-
-
-donut hole
-
-
-
-PARTICLES!!!
-
-
-
-okay, I'm done now
-
-
-
-for realz
-
-fo' shizzle
-
-
-
-squeak
-
-
-
-
-
-
-
-...
-
-yeah, I'm done
-
-
-
-
-
-
-Thanks, for Playing!
+Thanks, for Playing! :)
