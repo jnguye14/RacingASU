@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfbac050f6060f04fb5015ebc87161a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  segmentRadius: 1
+  segmentRadius: 10
   tubeRadius: .100000001
   segments: 32
   tubes: 12

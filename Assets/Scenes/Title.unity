@@ -74,135 +74,6 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
---- !u!1 &342280960
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 342280961}
-  - 131: {fileID: 342280962}
-  - 114: {fileID: 342280963}
-  - 114: {fileID: 342280965}
-  - 114: {fileID: 342280966}
-  - 114: {fileID: 342280964}
-  - 114: {fileID: 342280967}
-  m_Layer: 0
-  m_Name: TitleGUI
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &342280961
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 342280960}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .5, y: .5, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
---- !u!131 &342280962
-GUITexture:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 342280960}
-  m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: fdcd92b9fb4434c0e82dc8352f8c9369, type: 3}
-  m_Color: {r: .5, g: .5, b: .5, a: .5}
-  m_PixelInset:
-    serializedVersion: 2
-    x: -256
-    y: -128
-    width: 512
-    height: 256
-  m_LeftBorder: 0
-  m_RightBorder: 0
-  m_TopBorder: 0
-  m_BottomBorder: 0
---- !u!114 &342280963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 342280960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4c585e3dbd91a149bd072a2b840d63f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  showThis: 0
-  creditSpeed: 50
-  fileName: /Scripts/credits.txt
---- !u!114 &342280964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 342280960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d16e7ac603f241fa9988495490d37c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameMode: 0
-  charNum: 0
-  transNum: 0
---- !u!114 &342280965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 342280960}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8036c2ebcd3244da19cd5be9bea4771f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  charPic1: {fileID: 0}
-  charPic2: {fileID: 0}
-  charPic3: {fileID: 0}
-  charPic4: {fileID: 0}
-  charPic5: {fileID: 0}
-  charPic6: {fileID: 0}
-  shoesPic: {fileID: 0}
-  rollerbladePic: {fileID: 0}
-  skateboardPic: {fileID: 0}
-  scooterPic: {fileID: 0}
-  bikePic: {fileID: 0}
---- !u!114 &342280966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 342280960}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 458d601892857e04984b5f67a7360535, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mapTexture: {fileID: 0}
-  fileName: /buildings.txt
-  startNum: 0
-  endNum: 0
-  startDropDown: {fileID: 718907513}
-  endDropDown: {fileID: 1257057063}
---- !u!114 &342280967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 342280960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c99021af7fe675949825669bf8cc209b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &718907513
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,7 +84,7 @@ GameObject:
   - 4: {fileID: 718907515}
   - 114: {fileID: 718907514}
   m_Layer: 0
-  m_Name: StartLoc
+  m_Name: EndLoc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -238,22 +109,79 @@ MonoBehaviour:
     height: 40
   buildings:
   - model: {fileID: 0}
-    Name: Hello
+    Name: ARTbuilding
+    Code: ART
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 0}
+    Name: Central_Plant
+    Code: CP
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 0}
+    Name: Farmer
+    Code: ED
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 0}
+    Name: Hayden
+    Code: LIB
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 0}
+    Name: hughdowns
     Code: BYENG
     position: {x: 0, y: 0, z: 0}
     radius: 0
     SpawnDirection: 0
     SpawnLocation: {x: 0, y: 0, z: 0}
   - model: {fileID: 0}
-    Name: World
-    Code: BYAC
+    Name: Lyceum Theatre
+    Code: LYC
     position: {x: 0, y: 0, z: 0}
     radius: 0
     SpawnDirection: 0
     SpawnLocation: {x: 0, y: 0, z: 0}
   - model: {fileID: 0}
-    Name: Art Building
-    Code: ART
+    Name: Stauffer_A
+    Code: STAUFA
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 0}
+    Name: StaufferB
+    Code: STAUFB
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 0}
+    Name: Tower
+    Code: TOWER
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 0}
+    Name: Wilsonhall
+    Code: WILSN
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  selectedBuilding:
+    model: {fileID: 0}
+    Name: 
+    Code: 
     position: {x: 0, y: 0, z: 0}
     radius: 0
     SpawnDirection: 0
@@ -269,6 +197,145 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &774145128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 774145131}
+  - 131: {fileID: 774145130}
+  - 114: {fileID: 774145129}
+  - 114: {fileID: 774145132}
+  - 114: {fileID: 774145133}
+  - 114: {fileID: 774145134}
+  - 114: {fileID: 774145135}
+  m_Layer: 0
+  m_Name: racinasutitle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &774145129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 774145128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e138ba7a58f03341a3dfc493a914a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buffer: 10
+  creditSpeed: 100
+  credits: {fileID: 4900000, guid: a63a35bfa7a6f4f408fc5707388f887f, type: 3}
+  RestartButton:
+    serializedVersion: 2
+    x: 80
+    y: 80
+    width: 10
+    height: 5
+  skin: {fileID: 11400000, guid: 934e69630718994409bd777360189f8d, type: 2}
+  titleFont: {fileID: 0}
+  creditBanner: {fileID: 2800000, guid: b514999987ec30e49842bae3af327f69, type: 3}
+  menuBox:
+    serializedVersion: 2
+    x: 60
+    y: 50
+    width: 30
+    height: 40
+--- !u!131 &774145130
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 774145128}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: a021ddc130f26d94b83e9ab01e017f7c, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -256
+    y: -256
+    width: 512
+    height: 512
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &774145131
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 774145128}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .5, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &774145132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 774145128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99021af7fe675949825669bf8cc209b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &774145133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 774145128}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 611e187add09df940bad980ed74b1483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charPic1: {fileID: 2800000, guid: be84ce218ac9406489ebc8bb6648305c, type: 3}
+  charPic2: {fileID: 2800000, guid: be84ce218ac9406489ebc8bb6648305c, type: 3}
+  charPic3: {fileID: 2800000, guid: be84ce218ac9406489ebc8bb6648305c, type: 3}
+  charPic4: {fileID: 2800000, guid: be84ce218ac9406489ebc8bb6648305c, type: 3}
+  charPic5: {fileID: 2800000, guid: be84ce218ac9406489ebc8bb6648305c, type: 3}
+  charPic6: {fileID: 2800000, guid: be84ce218ac9406489ebc8bb6648305c, type: 3}
+  shoesPic: {fileID: 0}
+  rollerbladePic: {fileID: 0}
+  skateboardPic: {fileID: 0}
+  scooterPic: {fileID: 0}
+  bikePic: {fileID: 0}
+--- !u!114 &774145134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 774145128}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f123f39107a652f45a72d49e12644313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapTexture: {fileID: 2800000, guid: e565e8a3ff3d606499601b7fea0a16aa, type: 3}
+  fileName: /buildings.txt
+  startDropDown: {fileID: 1717345337}
+  endDropDown: {fileID: 718907513}
+--- !u!114 &774145135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 774145128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe4fa81d8d5e582488c9519efd6ecd2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &892178050
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,28 +475,28 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!1 &1257057063
+--- !u!1 &1717345337
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 1257057065}
-  - 114: {fileID: 1257057064}
+  - 4: {fileID: 1717345339}
+  - 114: {fileID: 1717345338}
   m_Layer: 0
-  m_Name: EndLoc
+  m_Name: StartLoc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1257057064
+--- !u!114 &1717345338
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1257057063}
+  m_GameObject: {fileID: 1717345337}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43e82465bb6ad05479d4e5f84a229df9, type: 3}
@@ -438,16 +505,94 @@ MonoBehaviour:
   boundingBox:
     serializedVersion: 2
     x: 700
-    y: 300
-    width: 410
+    y: 100
+    width: 400
     height: 40
-  buildings: []
---- !u!4 &1257057065
+  buildings:
+  - model: {fileID: 0}
+    Name: ARTbuilding
+    Code: ART
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 0}
+    Name: Central_Plant
+    Code: CP
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 0}
+    Name: Farmer
+    Code: ED
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 0}
+    Name: Hayden
+    Code: LIB
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 0}
+    Name: hughdowns
+    Code: BYENG
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 0}
+    Name: Lyceum Theatre
+    Code: LYC
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 0}
+    Name: Stauffer_A
+    Code: STAUFA
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 0}
+    Name: StaufferB
+    Code: STAUFB
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 0}
+    Name: Tower
+    Code: TOWER
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 0}
+    Name: Wilsonhall
+    Code: WILSN
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  selectedBuilding:
+    model: {fileID: 0}
+    Name: 
+    Code: 
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+--- !u!4 &1717345339
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1257057063}
+  m_GameObject: {fileID: 1717345337}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
