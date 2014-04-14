@@ -18,8 +18,12 @@ Racing ASU
 - [ ] Landscaping the Terrain (trees, grass, etc.)
 - [ ] Building Placement
 - [ ] Power-up/down Placement
-- [ ] Other Prop Placement (solor panels, etc.)
+- [ ] Other Prop Placement (solor panels, blue emergency lights, bus stops, benches, etc.)
 - [ ] Ending Sequence
+- [x] Music
+- [ ] SFX
+- [ ] Possible Collectables
+- [ ] Possible M&G -> to purchase temporary(vending machines) and permanent(bookstore) power-ups
 
 ###Programming
 - [x] Arrow
@@ -29,6 +33,9 @@ Racing ASU
 - [ ] Power-downs (walk-only zones)
 - [ ] Time Attack Timer => Grade Scoring System: A, B, C, D, F
 - [ ] Multiplayer Split Screen
+- [ ] Game Pad/Controller Input
+- [ ] Crowd AI
+
 
 
 ##Contributors:
