@@ -29,12 +29,13 @@ Racing ASU
 - [x] Arrow
 - [x] Minimap
 - [x] Dropdown start/end points
+- [ ] Better Third-Person Camera Control
 - [ ] Power-ups (rollerscates, scateboards, etc.)
 - [ ] Power-downs (walk-only zones)
 - [ ] Time Attack Timer => Grade Scoring System: A, B, C, D, F
-- [ ] Multiplayer Split Screen
 - [ ] Game Pad/Controller Input
-- [ ] Crowd AI
+- [ ] Possible Crowd AI
+- [ ] Possible Multiplayer Split Screen
 
 
 
