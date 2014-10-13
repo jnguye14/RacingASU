@@ -108,7 +108,7 @@ PlayerSettings:
     - m_Icon: {fileID: 2800000, guid: b7d50fbfa5c902e44a08cb9d1f58ed13, type: 3}
       m_Size: 128
   m_BuildTargetBatching: []
-  webPlayerTemplate: APPLICATION:Default
+  webPlayerTemplate: APPLICATION:Black Background
   m_TemplateCustomTags: {}
   XboxTitleId: 
   XboxImageXexPath: 
