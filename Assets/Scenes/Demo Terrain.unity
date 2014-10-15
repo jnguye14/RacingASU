@@ -9708,7 +9708,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: e2ce3474105fbdd489b3a20cce20b0f2, type: 2}
       propertyPath: originPosition.z
-      value: 500
+      value: 350
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400002, guid: e2ce3474105fbdd489b3a20cce20b0f2, type: 2}
@@ -35326,7 +35326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 364850341}
-  originPosition: {x: 300, y: 0, z: 500}
+  originPosition: {x: 300, y: 0, z: 350}
   bottomRightPosition: {x: -125, y: 0, z: 175}
 --- !u!1 &885550363
 GameObject:
