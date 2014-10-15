@@ -109,6 +109,20 @@ MonoBehaviour:
     radius: 0
     SpawnDirection: 0
     SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 100042, guid: e13ec7437f3b624408cdd394afcf53bb, type: 2}
+    Name: Design North
+    Code: CDN
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 100000, guid: 76ce49099b6688e47b44309889873b34, type: 2}
+    Name: Design South
+    Code: CDS
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
   selectedBuilding:
     model: {fileID: 0}
     Name: 

@@ -617,6 +617,20 @@ MonoBehaviour:
     radius: 0
     SpawnDirection: 0
     SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 100000, guid: 593a3401719ad724aba6506ce342a92d, type: 2}
+    Name: Wilsonhall
+    Code: WILSN
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 100000, guid: 593a3401719ad724aba6506ce342a92d, type: 2}
+    Name: Wilsonhall
+    Code: WILSN
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
   selectedBuilding:
     model: {fileID: 0}
     Name: 
