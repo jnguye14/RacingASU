@@ -77,8 +77,8 @@ NavMeshSettings:
 --- !u!1 &718907513
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 100000, guid: 31cea0f5431eb264bb27044351f4e725, type: 2}
+  m_PrefabInternal: {fileID: 2041671419}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 718907515}
@@ -93,8 +93,9 @@ GameObject:
 --- !u!114 &718907514
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 11400000, guid: 31cea0f5431eb264bb27044351f4e725,
+    type: 2}
+  m_PrefabInternal: {fileID: 2041671419}
   m_GameObject: {fileID: 718907513}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -108,70 +109,63 @@ MonoBehaviour:
     width: 400
     height: 40
   buildings:
-  - model: {fileID: 0}
+  - model: {fileID: 100000, guid: 5066b7929fd82584caf26ec910b1abba, type: 2}
     Name: ARTbuilding
     Code: ART
     position: {x: 0, y: 0, z: 0}
     radius: 0
     SpawnDirection: 0
     SpawnLocation: {x: 0, y: 0, z: 0}
-  - model: {fileID: 0}
+  - model: {fileID: 100004, guid: d84d6bd3a4788134686967d62b3dc768, type: 2}
     Name: Central_Plant
     Code: CP
     position: {x: 0, y: 0, z: 0}
     radius: 0
     SpawnDirection: 0
     SpawnLocation: {x: 0, y: 0, z: 0}
-  - model: {fileID: 0}
+  - model: {fileID: 100000, guid: 018c5d9cbb2b6634db91c2d2f94a9430, type: 2}
     Name: Farmer
     Code: ED
     position: {x: 0, y: 0, z: 0}
     radius: 0
     SpawnDirection: 0
     SpawnLocation: {x: 0, y: 0, z: 0}
-  - model: {fileID: 0}
+  - model: {fileID: 100098, guid: 53e2e510aadfca747b4f7b5ecdb84370, type: 2}
     Name: Hayden
     Code: LIB
     position: {x: 0, y: 0, z: 0}
     radius: 0
     SpawnDirection: 0
     SpawnLocation: {x: 0, y: 0, z: 0}
-  - model: {fileID: 0}
-    Name: hughdowns
-    Code: BYENG
-    position: {x: 0, y: 0, z: 0}
-    radius: 0
-    SpawnDirection: 0
-    SpawnLocation: {x: 0, y: 0, z: 0}
-  - model: {fileID: 0}
+  - model: {fileID: 100004, guid: 0ee29ec40ba103a47ac8b1ce7c1e9580, type: 2}
     Name: Lyceum Theatre
     Code: LYC
     position: {x: 0, y: 0, z: 0}
     radius: 0
     SpawnDirection: 0
     SpawnLocation: {x: 0, y: 0, z: 0}
-  - model: {fileID: 0}
+  - model: {fileID: 100010, guid: 65f696a5fa027334087b0aa83a64b63f, type: 2}
     Name: Stauffer_A
     Code: STAUFA
     position: {x: 0, y: 0, z: 0}
     radius: 0
     SpawnDirection: 0
     SpawnLocation: {x: 0, y: 0, z: 0}
-  - model: {fileID: 0}
-    Name: StaufferB
+  - model: {fileID: 100004, guid: b70c51c86e0e6ab41b0e2349c062bada, type: 2}
+    Name: Stauffer_B
     Code: STAUFB
     position: {x: 0, y: 0, z: 0}
     radius: 0
     SpawnDirection: 0
     SpawnLocation: {x: 0, y: 0, z: 0}
-  - model: {fileID: 0}
+  - model: {fileID: 100006, guid: af8278f2001b6a945b53388dfa62e584, type: 2}
     Name: Tower
     Code: TOWER
     position: {x: 0, y: 0, z: 0}
     radius: 0
     SpawnDirection: 0
     SpawnLocation: {x: 0, y: 0, z: 0}
-  - model: {fileID: 0}
+  - model: {fileID: 100000, guid: 593a3401719ad724aba6506ce342a92d, type: 2}
     Name: Wilsonhall
     Code: WILSN
     position: {x: 0, y: 0, z: 0}
@@ -189,14 +183,15 @@ MonoBehaviour:
 --- !u!4 &718907515
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 400000, guid: 31cea0f5431eb264bb27044351f4e725, type: 2}
+  m_PrefabInternal: {fileID: 2041671419}
   m_GameObject: {fileID: 718907513}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!1 &774145128
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,6 +272,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 2
 --- !u!114 &774145132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -336,6 +332,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe4fa81d8d5e582488c9519efd6ecd2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &826063035
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 05f90f32e6a7b144eaf9505a2fd8978e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 05f90f32e6a7b144eaf9505a2fd8978e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 05f90f32e6a7b144eaf9505a2fd8978e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 05f90f32e6a7b144eaf9505a2fd8978e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 05f90f32e6a7b144eaf9505a2fd8978e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 05f90f32e6a7b144eaf9505a2fd8978e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 05f90f32e6a7b144eaf9505a2fd8978e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 05f90f32e6a7b144eaf9505a2fd8978e, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 05f90f32e6a7b144eaf9505a2fd8978e, type: 2}
+  m_RootGameObject: {fileID: 1717345337}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &892178050
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,6 +407,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 1
 --- !u!20 &892178052
 Camera:
   m_ObjectHideFlags: 0
@@ -394,8 +435,11 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
   m_HDR: 0
   m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
 --- !u!81 &892178053
 AudioListener:
   m_ObjectHideFlags: 0
@@ -478,8 +522,8 @@ AudioSource:
 --- !u!1 &1717345337
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 100000, guid: 05f90f32e6a7b144eaf9505a2fd8978e, type: 2}
+  m_PrefabInternal: {fileID: 826063035}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1717345339}
@@ -494,8 +538,9 @@ GameObject:
 --- !u!114 &1717345338
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 11400000, guid: 05f90f32e6a7b144eaf9505a2fd8978e,
+    type: 2}
+  m_PrefabInternal: {fileID: 826063035}
   m_GameObject: {fileID: 1717345337}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -507,72 +552,65 @@ MonoBehaviour:
     x: 700
     y: 100
     width: 400
-    height: 40
+    height: 400
   buildings:
-  - model: {fileID: 0}
+  - model: {fileID: 100000, guid: 5066b7929fd82584caf26ec910b1abba, type: 2}
     Name: ARTbuilding
     Code: ART
     position: {x: 0, y: 0, z: 0}
     radius: 0
-    SpawnDirection: 0
+    SpawnDirection: 3
     SpawnLocation: {x: 0, y: 0, z: 0}
-  - model: {fileID: 0}
+  - model: {fileID: 100004, guid: d84d6bd3a4788134686967d62b3dc768, type: 2}
     Name: Central_Plant
     Code: CP
     position: {x: 0, y: 0, z: 0}
     radius: 0
     SpawnDirection: 0
     SpawnLocation: {x: 0, y: 0, z: 0}
-  - model: {fileID: 0}
+  - model: {fileID: 100000, guid: 018c5d9cbb2b6634db91c2d2f94a9430, type: 2}
     Name: Farmer
     Code: ED
     position: {x: 0, y: 0, z: 0}
     radius: 0
     SpawnDirection: 0
     SpawnLocation: {x: 0, y: 0, z: 0}
-  - model: {fileID: 0}
+  - model: {fileID: 100098, guid: 53e2e510aadfca747b4f7b5ecdb84370, type: 2}
     Name: Hayden
     Code: LIB
     position: {x: 0, y: 0, z: 0}
     radius: 0
     SpawnDirection: 0
     SpawnLocation: {x: 0, y: 0, z: 0}
-  - model: {fileID: 0}
-    Name: hughdowns
-    Code: BYENG
-    position: {x: 0, y: 0, z: 0}
-    radius: 0
-    SpawnDirection: 0
-    SpawnLocation: {x: 0, y: 0, z: 0}
-  - model: {fileID: 0}
+  - model: {fileID: 100004, guid: 0ee29ec40ba103a47ac8b1ce7c1e9580, type: 2}
     Name: Lyceum Theatre
     Code: LYC
     position: {x: 0, y: 0, z: 0}
     radius: 0
     SpawnDirection: 0
     SpawnLocation: {x: 0, y: 0, z: 0}
-  - model: {fileID: 0}
+  - model: {fileID: 100010, guid: 65f696a5fa027334087b0aa83a64b63f, type: 2}
     Name: Stauffer_A
     Code: STAUFA
     position: {x: 0, y: 0, z: 0}
     radius: 0
     SpawnDirection: 0
     SpawnLocation: {x: 0, y: 0, z: 0}
-  - model: {fileID: 0}
-    Name: StaufferB
+  - model: {fileID: 100004, guid: b70c51c86e0e6ab41b0e2349c062bada, type: 2}
+    Name: Stauffer_B
     Code: STAUFB
     position: {x: 0, y: 0, z: 0}
     radius: 0
     SpawnDirection: 0
     SpawnLocation: {x: 0, y: 0, z: 0}
-  - model: {fileID: 0}
+  - model: {fileID: 100006, guid: af8278f2001b6a945b53388dfa62e584, type: 2}
     Name: Tower
     Code: TOWER
     position: {x: 0, y: 0, z: 0}
     radius: 0
     SpawnDirection: 0
     SpawnLocation: {x: 0, y: 0, z: 0}
-  - model: {fileID: 0}
+  - model: {fileID: 100000, guid: 593a3401719ad724aba6506ce342a92d, type: 2}
     Name: Wilsonhall
     Code: WILSN
     position: {x: 0, y: 0, z: 0}
@@ -590,11 +628,56 @@ MonoBehaviour:
 --- !u!4 &1717345339
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 400000, guid: 05f90f32e6a7b144eaf9505a2fd8978e, type: 2}
+  m_PrefabInternal: {fileID: 826063035}
   m_GameObject: {fileID: 1717345337}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 3
+--- !u!1001 &2041671419
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 31cea0f5431eb264bb27044351f4e725, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 31cea0f5431eb264bb27044351f4e725, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 31cea0f5431eb264bb27044351f4e725, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 31cea0f5431eb264bb27044351f4e725, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 31cea0f5431eb264bb27044351f4e725, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 31cea0f5431eb264bb27044351f4e725, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 31cea0f5431eb264bb27044351f4e725, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 31cea0f5431eb264bb27044351f4e725, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 31cea0f5431eb264bb27044351f4e725, type: 2}
+  m_RootGameObject: {fileID: 718907513}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1

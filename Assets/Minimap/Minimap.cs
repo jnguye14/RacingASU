@@ -31,7 +31,7 @@ public class Minimap{
 	private Texture bg;
 	private void loadAssets(){
 		//map = (Texture)Resources.Load("mm_map") as Texture;
-        map = (Texture)Resources.Load("ASU map 1") as Texture;
+		map = (Texture)Resources.Load("ASU_map") as Texture;
 		playerMarker=(Texture)Resources.Load("mm_player") as Texture;
 		coverPlate=(Texture)Resources.Load("mm_cover") as Texture;
 		bg=(Texture)Resources.Load("mm_bg") as Texture;

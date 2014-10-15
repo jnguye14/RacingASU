@@ -11,7 +11,8 @@ public class Spawn : MonoBehaviour
         GameObject startPos = GameObject.Find(PlayerPrefs.GetString("StartLoc"));
 
         this.transform.position = startPos.transform.position;
-        this.transform.position += Vector3.up * 10.0f;
+        this.transform.position += Vector3.up * 10*0f;
+
         /*
 		if (PlayerPrefs.HasKey ("SpawnX")
 		    	&& PlayerPrefs.HasKey ("SpawnY")

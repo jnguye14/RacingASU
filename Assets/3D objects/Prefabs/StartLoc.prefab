@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: StartLoc
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e82465bb6ad05479d4e5f84a229df9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boundingBox:
+    serializedVersion: 2
+    x: 700
+    y: 100
+    width: 400
+    height: 400
+  buildings:
+  - model: {fileID: 100000, guid: 5066b7929fd82584caf26ec910b1abba, type: 2}
+    Name: ARTbuilding
+    Code: ART
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 3
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 100004, guid: d84d6bd3a4788134686967d62b3dc768, type: 2}
+    Name: Central_Plant
+    Code: CP
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 100000, guid: 018c5d9cbb2b6634db91c2d2f94a9430, type: 2}
+    Name: Farmer
+    Code: ED
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 100098, guid: 53e2e510aadfca747b4f7b5ecdb84370, type: 2}
+    Name: Hayden
+    Code: LIB
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 100004, guid: 0ee29ec40ba103a47ac8b1ce7c1e9580, type: 2}
+    Name: Lyceum Theatre
+    Code: LYC
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 100010, guid: 65f696a5fa027334087b0aa83a64b63f, type: 2}
+    Name: Stauffer_A
+    Code: STAUFA
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 100004, guid: b70c51c86e0e6ab41b0e2349c062bada, type: 2}
+    Name: Stauffer_B
+    Code: STAUFB
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 100006, guid: af8278f2001b6a945b53388dfa62e584, type: 2}
+    Name: Tower
+    Code: TOWER
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  - model: {fileID: 100000, guid: 593a3401719ad724aba6506ce342a92d, type: 2}
+    Name: Wilsonhall
+    Code: WILSN
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+  selectedBuilding:
+    model: {fileID: 0}
+    Name: 
+    Code: 
+    position: {x: 0, y: 0, z: 0}
+    radius: 0
+    SpawnDirection: 0
+    SpawnLocation: {x: 0, y: 0, z: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

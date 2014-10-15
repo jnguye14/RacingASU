@@ -7,6 +7,11 @@ var ySpeed = 120.0;
 var yMinLimit = -20;
 var yMaxLimit = 80;
 
+// the height we want the camera to be above the target
+var height = 5.0;
+// How much we 
+var heightDamping = 2.0;
+
 private var x = 0.0;
 private var y = 0.0;
 
@@ -32,8 +37,15 @@ function LateUpdate () {
         var rotation = Quaternion.Euler(y, x, 0);
         var position = rotation * Vector3(0.0, 0.0, -distance) + target.position;
         
+        var wantedHeight = target.position.y + height;
+        var currentHeight = transform.position.y;
+        // Damp the height
+		currentHeight = Mathf.Lerp (currentHeight, wantedHeight, heightDamping * Time.deltaTime);
+		
         transform.rotation = rotation;
         transform.position = position;
+        // Set the height of the camera
+		transform.position.y = currentHeight;
     }
 }
 

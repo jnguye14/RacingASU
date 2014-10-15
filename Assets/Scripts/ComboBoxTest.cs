@@ -181,7 +181,7 @@ public class Building
         West
     }
     public Direction SpawnDirection = Direction.North; // default
-    public Vector3 SpawnLocation = Vector3.zero;
+    public Vector3 SpawnLocation;
 
     public Building() { }
 

@@ -65,7 +65,7 @@ public class MainController : MonoBehaviour
         Debug.Log("Starting Game with: " + startLoc + " and ending with " + endLoc);
         PlayerPrefs.SetString("StartLoc", startLoc);
         PlayerPrefs.SetString("EndLoc", endLoc);
-        Application.LoadLevel("Test"); // JNN: temp
+		Application.LoadLevel("Demo Terrain"); // JNN: temp
         /*
 	    switch(gameMode)
 	    {
